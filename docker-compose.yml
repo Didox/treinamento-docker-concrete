@@ -17,16 +17,19 @@ services:
   sistema_concrete_java1:
     container_name: sistema_concrete_nginx_container_1
     image: didox/validador-cpf-java-turma-devops
+    command: sh -c "echo 'bem vindo ao container 1'"
     networks:
       - concrete-network
   sistema_concrete_java2:
     container_name: sistema_concrete_nginx_container_2
     image: didox/validador-cpf-java-turma-devops
+    command: sh -c "echo 'bem vindo ao container 2'"
     networks:
       - concrete-network
   sistema_concrete_java3:
     container_name: sistema_concrete_nginx_container_3
     image: didox/validador-cpf-java-turma-devops
+    command: sh -c "echo 'bem vindo ao container 2'"
     networks:
       - concrete-network
 
